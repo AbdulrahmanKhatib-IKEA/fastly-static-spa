@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
+import { Route, Routes} from 'react-router-dom';
+import StatusPage from "./components/StatusPage";
+import CardSelector from "./components/cardSelector";
+import Checkout from "./components/checkout";
 import './App.css';
-
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+  return(
+    <div className="main">
+      <div className="center">
+        <Routes>
+          <Route
+            path= '/'
+            element={<StatusPage/>} 
+          />
+          <Route
+            path= '/giftcard'
+            element={<CardSelector/>} 
+          />
+          <Route
+            path= '/checkout'
+            element={<Checkout/>} 
+          />
+        </Routes>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;

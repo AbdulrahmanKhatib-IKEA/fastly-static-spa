@@ -1,0 +1,9 @@
+@import '@ingka/variables/style';
+@import '../skapa/_styles.scss';
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: $space-125;
+}

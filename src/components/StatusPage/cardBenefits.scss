@@ -1,0 +1,48 @@
+@import '@ingka/variables/style';
+@import '../skapa/_styles.scss';
+
+.card-benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: $space-400 $space-250 0 $space-250;
+  gap: $space-400;
+  max-width: 54rem;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  @media (max-width: $breakpoint-m) {
+    padding: $space-250 0 0;
+    width: 24rem;
+    flex-grow: 0;
+  }
+}
+
+.card-benefits-element {
+  display: flex;
+  flex-direction: column;
+  gap: $space-50;
+  width: 100%;
+  padding: 0 $space-200 0 $space-200;
+  @media (max-width: $breakpoint-m) {
+    padding: 0;
+  }
+}
+
+.card-benefits-item-title {
+  width: 90%;
+  text-align: center;
+  @media (max-width: $breakpoint-m) {
+    text-align: left;
+  }
+}
+
+.card-benefits-item-body {
+  width: 90%;
+  text-align: center;
+  color: rgba(17, 17, 17, 1);
+  font-size: 24px;
+  @media (max-width: $breakpoint-m) {
+    text-align: left;
+  }
+}

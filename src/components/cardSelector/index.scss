@@ -1,0 +1,69 @@
+@import '@ingka/variables/style';
+@import '../skapa/_styles.scss';
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0 $space-250 0;
+  @media (max-width: $breakpoint-m) {
+    padding: 0 0;
+  }
+}
+
+.custom-choice {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0;
+  gap: $space-100;
+  height: auto;
+  border-radius: $radius-s;
+}
+
+.custom-choice-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $space-150 0 0 0;
+  gap: $space-50;
+}
+
+.custom-choice-item {
+  box-sizing: border-box;
+  padding: $space-125 $space-125;
+  width: 11.75rem;
+  min-height: auto;
+  height: $space-400;
+  border: $thickness-thin solid #dfdfdf;
+  border-radius: $radius-s;
+  @media (max-width: $breakpoint-m) {
+    width: 11.5rem;
+  }
+}
+
+.custom-choice-items .gcengine-choice__list-item {
+  min-height: auto;
+  height: $space-300;
+}
+
+.custom-choice-items .gcengine-choice-item__action {
+  min-height: auto;
+  padding: 0;
+}
+
+.btn-wrapper {
+  width: 100%;
+  margin-top: $space-125;
+}
+
+.card-specs {
+  display: flex;
+  flex-direction: column;
+  gap: $space-50;
+  margin: $space-250 0 0 0;
+}
+
+.card-specs-item {
+  display: flex;
+  flex-direction: row;
+  gap: $space-100;
+}

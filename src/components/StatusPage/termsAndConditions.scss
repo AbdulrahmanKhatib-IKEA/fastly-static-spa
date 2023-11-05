@@ -1,0 +1,29 @@
+@import '@ingka/variables/style';
+@import '../skapa/_styles.scss';
+
+.terms-conditions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: $space-400 $space-250 0 $space-250;
+  gap: $space-125;
+  max-width: 54rem;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  // Mobile:
+  @media (max-width: $breakpoint-m) {
+    flex-direction: column;
+    padding: $space-250 $space-125;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+  }
+}
+
+.terms-conditions-item {
+  text-align: left;
+  // Mobile:
+  @media (max-width: $breakpoint-m) {
+  }
+}
